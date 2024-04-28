@@ -1,0 +1,328 @@
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+  }
+
+  #imep {
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-color: #7CC87C;
+  }
+
+  .gjs-row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      padding: 10px;
+  }
+
+  .gjs-cell {
+      min-height: 75px;
+      flex-grow: 1;
+      flex-basis: 100%;
+  }
+
+  #imgPrincipale {
+      color: black;
+      width: 100%;
+  }
+
+  .icon__acceuil {
+      color: black;
+      width: 10em;
+      align-self: center;
+  }
+
+  .cellule__description {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-self: stretch;
+  }
+
+  .text__description {
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      margin: 30px 30px 30px 30px;
+      font-size: 25px;
+  }
+
+  .section {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+  }
+
+  .bouton {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 20px 0px 20px 0px;
+  }
+
+  #carte {
+      width: 100%;
+      border: 10px solid white;
+      border-radius: 15px 15px 15px 15px;
+  }
+
+  #i0kgk {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+  }
+
+  #ifi88 {
+      padding: 30px 30px 30px 30px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-attachment: scroll;
+      background-size: cover;
+      background-image: url('img/flat-mountains.svg');
+      flex-direction: row-reverse;
+  }
+
+  #ia1xt {
+      padding: 30px 10px 30px 10px;
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(#326a57 0%, #326a57 100%);
+  }
+
+  .nom__chalet {
+      padding: 10px;
+      display: block;
+      position: relative;
+      color: white;
+      font-size: 60px;
+      text-align: center;
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(transparent 0%, transparent 100%);
+      font-weight: 700;
+
+      top: 50%;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      float: none;
+      transform: translateY(-50%) translateX(-50%);
+
+      opacity: 0;
+      animation: fade-in-titre 2s ease-out forwards;
+  }
+
+  #i6qid {
+      padding: 10px;
+      text-align: center;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 3em;
+  }
+
+  /*2e partie*/
+  #etoiles {
+      width: 4em;
+      height: auto;
+      animation: pulse 1s ease-in-out infinite alternate;
+  }
+
+  #imep {
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(#7cc87c 0%, #7cc87c 100%);
+  }
+
+  .cellule {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .row {
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(#326a57 0%, #326a57 100%);
+  }
+
+  #equipements {
+      color: white;
+      font-weight: bold;
+  }
+  .equipements{
+    opacity: 0;
+  }
+
+  #aNoter {
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+  }
+
+  #tarifs {
+      color: white;
+      font-weight: bold;
+      opacity: 0;
+  }
+
+  #iv74y {
+      padding: 10px;
+  }
+
+  #irm4k {
+      padding: 10px;
+      margin: 0px 0px 30px 0px;
+      color: white;
+  }
+
+  #ikkc4 {
+      display: flex;
+      justify-content: center;
+  }
+
+  #imdp5 {
+      padding: 10px;
+      text-align: center;
+  }
+
+  #iajph {
+      padding: 10px;
+      text-align: center;
+  }
+
+  #ifbfw {
+      padding: 10px;
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(#326a57 0%, #326a57 100%);
+  }
+
+  #i3iqf {
+      padding: 10px;
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(#326a57 0%, #326a57 100%);
+  }
+
+  #imz2s {
+      background-repeat: repeat;
+      background-position: left top;
+      background-attachment: scroll;
+      background-size: auto;
+      background-image: linear-gradient(#326a57 0%, #326a57 100%);
+  }
+
+  #ijj4f {
+      padding: 10px;
+      text-align: center;
+  }
+
+  #i4yfi {
+      padding: 10px;
+      text-align: center;
+  }
+
+  #ite3k {
+      padding: 10px;
+      text-align: center;
+  }
+
+  #i534b {
+      padding: 10px;
+      text-align: center;
+  }
+
+  #i6ip6 {
+      padding: 10px;
+      text-align: center;
+  }
+
+  #iid8e {
+      display: flex;
+      justify-content: center;
+  }
+
+  #ik2cw {
+      display: flex;
+      justify-content: center;
+  }
+
+  #i2oel {
+      text-align: start;
+  }
+
+  #i61qd {
+      text-align: start;
+  }
+
+  @media screen and (max-width: 770px) {
+      .gjs-row {
+          flex-wrap: wrap;
+      }
+
+      .icon__acceuil {
+          width: 5em;
+      }
+
+      .nom__chalet {
+          font-size: 35px;
+          top: 20%;
+
+      }
+
+      #i6qid {
+          font-size: 20px;
+      }
+
+      .text__description {
+          font-size: 15px;
+      }
+  }
+
+  @keyframes pulse {
+      0% {
+          transform: scale(1);
+          /* Taille normale */
+      }
+
+      100% {
+          transform: scale(1.2);
+          /* Légèrement agrandie */
+      }
+  }
+
+  @keyframes fade-in-titre {
+      0% {
+          opacity: 0;
+      }
+
+      100% {
+          opacity: 1;
+      }
+  }

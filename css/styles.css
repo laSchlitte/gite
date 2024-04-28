@@ -1,0 +1,263 @@
+:root {
+    --header_height: 3.5rem;
+    --title-color: hsl(228, 8%, 98%);
+    --first-color: #7CC87C;
+    --second-color: #326a57;
+    --third-color: #4b4521;
+    --z-fixed: 100;
+    --font-semi-bold: 600;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--first-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--third-color);
+    font-size: 3em;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    text-align: center;
+    animation: fade-in 2s ease-out forwards;
+}
+
+h2 {
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    text-align: center;
+}
+
+/* ---------Styles de base pour le bouton------------ */
+button {
+
+    padding: 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--title-color);
+    /* Couleur de la bordure */
+    color: var(--title-color);
+    /* Couleur du texte */
+    background-color: transparent;
+    /* Couleur de fond transparente */
+    border-radius: 20px;
+    /* Coins arrondis */
+    transition: all 0.3s ease;
+    /* Transition fluide */
+}
+
+
+/* Effet de clic */
+button:active {
+    transform: translateY(1px);
+    /* Décalage vers le bas lors du clic */
+    box-shadow: none;
+    /* Pas d'ombre au clic */
+}
+
+
+
+
+/*----------HEADER-----------*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: O;
+    background-color: var(--second-color);
+    padding: 1%;
+    z-index: var(--z-fixed);
+    /* Ombre avec décalage de 0px en horizontal, 2px en vertical et un flou de 4px, couleur et opacité spécifiées */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__close,
+.nav__toggle,
+.nav__actions {
+    display: flex;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.nav__logo {
+    font-weight: var(--font-semi-bold);
+    column-gap: .25rem;
+    align-items: center;
+}
+
+.nav__logo i {
+    color: var(--first-color);
+    font-size: 1.25rem;
+    font-weight: initial;
+}
+
+.nav__actions {
+    font-size: 1.25rem;
+    column-gap: .5rem;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    row-gap: 3rem;
+}
+
+.nav__close {
+    position: absolute;
+    top: 1.15rem;
+    right: 1.5rem;
+    font-size: 1.25rem;
+    ;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(228, 24%, 6%, .2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right .4s;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 10rem;
+        row-gap: 3rem;
+    }
+
+    button:active {
+        background-color: var(--second-color);
+        /* Couleur de fond au survol */
+        color: var(--first-color);
+        /* Couleur du texte au survol */
+        border: 2px solid white;
+        transform: translateY(2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color .4s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.show-menu {
+    right: 0;
+}
+
+#logo_header {
+    height: 5vh;
+    width: auto;
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 1150px) {
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    /* Effet de survol */
+    button:hover {
+        background-color: var(--second-color);
+        /* Couleur de fond au survol */
+        color: var(--first-color);
+        /* Couleur du texte au survol */
+        border: 2px solid white;
+        transform: translateY(2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Animation de fondu */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 2s ease-out forwards;
+    /* Animation de fondu */
+}
+
+/* Animation de décalage */
+@keyframes decal-droite {
+    from {
+        opacity: 0;
+        transform: translatex(20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes decal-gauche {
+    from {
+        opacity: 0;
+        transform: translatex(-20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.droite{
+    animation: decal-droite 0.5s ease-out forwards;
+}
+.gauche{
+    animation: decal-gauche 0.5s ease-out forwards;
+}

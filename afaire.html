@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON-->
+    <link rel="icon" href="css/img/logo.ico" type="image/x-icon">
+    <!-- REMIXICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/afaire.css">
+
+    <title>Gîte la Schlitte - A faire</title>
+</head>
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+            <!-- <i class="ri-cactus-line"></i> Cactus -->
+            <img src="css/img/logo.ico" alt="logo" id="logo_header">La Schlitte
+        </a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Accueil</a>
+                </li>
+                <li class="nav__item">
+                    <a href="galerie.html" class="nav__link">Le Gîte</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://calendar.google.com/calendar/u/5?cid=Z2l0ZWxhc2NobGl0dGVAZ21haWwuY29t"
+                        target="_blank" class="nav__link" id="lien">Agenda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="afaire.html" class="nav__link">Réservation</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav__close">
+                <i class="ri-close-line" id="nav-close"></i>
+            </div>
+        </div>
+        <div class="nav__actions">
+            <div class="nav__toggle">
+                <i class="ri-menu-line" id="nav-toggle"></i>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<body>
+    <h1 id="titre">Étapes de réservation</h1>
+    <section class="etape">
+        <div class="step active" id="step1">
+            <h2>Étape 1</h2>
+            <p>Vérifier la disponibilité de vos dates via Google Agenda.
+                <a href="https://calendar.google.com/calendar/u/5?cid=Z2l0ZWxhc2NobGl0dGVAZ21haWwuY29t" target="_blank">
+                    <i class="ri-external-link-line"></i></a>
+            </p>
+        </div>
+        <div class="step" id="step2">
+            <h2>Étape 2</h2>
+            <p>Veuillez envoyer un courriel précisant les dates qui vous conviennent, le nombre de personnes adultes<br>
+                ou enfants présents (avec leur âge), en mentionnant la présence d'un bébé.
+                <a href="mailto:gitelaschlitte@gmail.com??subject=Demande%20de%20réservation&body=Bonjour%2C%0D%0A%0D%0AJe%20suis%20int%C3%A9ress%C3%A9(e)%20par%20la%20location%20du%20g%C3%AEte.%20Voici%20les%20dates%20propos%C3%A9es%20%3A%0D%0A%5BDate%201%5D%0D%0A%5BDate%202%5D%0D%0A%5BDate%203%5D%0D%0A%0D%0AVeuillez%20confirmer%20le%20nombre%20de%20participants%20%3A%0D%0A-%20Adultes%20%3A%0D%0A-%20Enfants%20(avec%20leurs%20%C3%A2ges)%20%3A%0D%0A-%20Pr%C3%A9sence%20d'un%20b%C3%A9b%C3%A9%20%3A%0D%0A%0D%0ADans%20l'attente%20de%20votre%20r%C3%A9ponse%20pour%20finaliser%20les%20d%C3%A9tails%2C%0D%0A%0D%0ACordialement%2C%0D%0A%5BVotre%20nom%5D"
+                    target="_blank">
+                    <i class="ri-external-link-line"></i></a>
+            </p>
+        </div>
+        <div class="step" id="step3">
+            <h2>Étape 3</h2>
+            <p>Veuillez remplir le contrat de location qui vous sera envoyé et inclure le règlement des Arrhes. <br>
+                N'oubliez pas de joindre une attestation d'assurance.
+            </p>
+        </div>
+        <div class="step" id="step4">
+            <h2>Étape 4</h2>
+            <p>Votre réservation est confirmée et sera ajoutée à l'agenda !</p><br>
+            <i class="ri-calendar-check-line"></i>
+        </div>
+
+        <div id="boutonSelection">
+            <button onclick="prevStep()">←</button>
+            <button onclick="nextStep()">→</button>
+        </div>
+    </section>
+
+
+</body>
+<script src="js/afaire.js"></script>
+<script src="js/menuHeader.js"></script>
+
+</html

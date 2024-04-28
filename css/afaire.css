@@ -1,0 +1,88 @@
+html {
+    background-image: url('img/flat-mountains.svg');
+    background-size: cover; /* Pour couvrir tout le fond sans déformation */
+    background-repeat: no-repeat; /* Pour empêcher la répétition de l'image */
+    background-position: center bottom; /* Positionner l'image en bas au centre */
+}
+
+.ri-external-link-line {
+    color: white;
+    font-size: 1.25em;
+}
+
+.ri-external-link-line:hover {
+    color: #326a57;
+}
+
+.ri-calendar-check-line{
+    font-size: 2.5em;
+}
+.etape {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 15px 15px 15px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/*----Afficher et enlever----*/
+.step {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.active {
+    display: flex;
+    color: white;
+    font-size: 1.5em;
+}
+/*---------------------------*/
+
+#boutonSelection button {
+    margin: 10px;
+    align-self: flex-end;
+}
+
+#titre {
+    margin-top: 100px;
+}
+@media screen and (max-width: 749px) {
+    html {
+    height: 120vh;
+    margin: 0; /* Pour supprimer les marges par défaut du corps */
+    padding: 0; /* Pour supprimer les remplissages par défaut du corps */
+    }
+    body{
+        height: 70vh;
+        margin: 0; /* Pour supprimer les marges par défaut du corps */
+        padding: 0; /* Pour supprimer les remplissages par défaut du corps */
+    }
+    #titre {
+        margin-top: 50px;
+    }
+}
+    
+@media screen and (min-width: 750px) {
+    html {
+    height: 100vh;
+    margin: 0; /* Pour supprimer les marges par défaut du corps */
+    padding: 0; /* Pour supprimer les remplissages par défaut du corps */
+    }
+    body{
+        height: 50vh;
+        margin: 0; /* Pour supprimer les marges par défaut du corps */
+        padding: 0; /* Pour supprimer les remplissages par défaut du corps */
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+}
