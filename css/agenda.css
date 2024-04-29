@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    background-image: url('img/flat-mountains.svg');
+    background-size: cover; /* Pour couvrir tout le fond sans déformation */
+    background-repeat: no-repeat; /* Pour empêcher la répétition de l'image */
+    background-position: center bottom; /* Positionner l'image en bas au centre */
+}
+
+.ri-external-link-line {
+    color: white;
+    font-size: 1.2em;
+}
+
+.ri-external-link-line:hover {
+    color: #326a57;
+}
+
+#titre {
+    margin-top: 100px;
+}
+
+#agenda{
+    padding: 20px;
+}
