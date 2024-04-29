@@ -5,7 +5,12 @@
   body {
       margin: 0;
   }
-
+html {
+    background-image: url('img/flat-mountains.svg');
+    background-size: cover; /* Pour couvrir tout le fond sans déformation */
+    background-repeat: no-repeat; /* Pour empêcher la répétition de l'image */
+    background-position: center bottom; /* Positionner l'image en bas au centre */
+}
   .container-width {
       width: 90%;
       max-width: 1150px;
@@ -95,13 +100,6 @@
       flex-basis: 100%;
       height: auto;
       padding: 10px 0px 10px 0px;
-  }
-
-  #imep {
-    background-image: url('img/flat-mountains.svg');
-    background-size: cover; /* Pour couvrir tout le fond sans déformation */
-    background-repeat: no-repeat; /* Pour empêcher la répétition de l'image */
-    background-position: center bottom; /* Positionner l'image en bas au centre */
   }
 
   .icon {
