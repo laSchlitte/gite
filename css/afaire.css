@@ -17,9 +17,9 @@ html {
 .ri-calendar-check-line{
     font-size: 2.5em;
 }
-.etape {
+.siteReservation {
     width: 80%;
-    height: 100%;
+    height: 50%;
     margin: auto;
     text-align: center;
     margin-top: 10px;
@@ -55,6 +55,13 @@ html {
 #titre {
     margin-top: 100px;
 }
+
+#agenda{
+    padding: 20px;
+    width:100%;
+    height:80vh;
+}
+
 @media screen and (max-width: 749px) {
     html {
     height: 120vh;
